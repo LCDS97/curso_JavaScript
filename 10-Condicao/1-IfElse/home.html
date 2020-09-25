@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Javascript</title>
     <script src="./if-else.js"></script>
+    <script src="./switch-case.js"></script>
 </head>
 
 <body>
@@ -21,6 +22,16 @@
     <a onclick="getCurrentTime(botao)" href="#">Ver hora atual</a>
     <input id="botao" type="time">
 
+
+    <h2>Definindo o usuário</h2>
+    <div class="form-group">
+        <form method="POST" action="#" onsubmit="mostrarUsuario(); return false;">
+        <label for="user">Digite seu tipo de usuário: Comum, Gerencia ou Diretor</label>
+        <input id="user" name="user" type="text" placeholder="Insira aqui seu tipo de usuario">
+        <input type="submit" name="confirmar" value="Confirmar">
+        </form>
+    </div>
+    <div id="resultado"></div>
     
 </body>
 
