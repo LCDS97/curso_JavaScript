@@ -4,9 +4,21 @@
 // Divisivel por 3 e 5 => ira retornar FizzBuzz
 // Não divisivel por 3 ou 5 => entrada
 // Não é um número => Mensagem de erro
-const resultado = fizzBuzz(3);
-console.log(resultado);
+const resultado = fizzBuzz(11);
+console.log(resultado)
 
 function fizzBuzz(entrada) {
+    if ( typeof entrada !== 'number')
+    return 'Não é um número';
 
+    if (entrada % 3 === 0 && entrada % 5 === 0)
+    return 'FizzBuzz';
+
+    if (entrada % 3 === 0)
+        return 'Fizz';
+    if (entrada % 5 === 0)
+        return 'Buzz';
+
+    return entrada;
+    
 }
