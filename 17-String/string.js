@@ -12,3 +12,5 @@ console.log(mensagem.includes('primeira'))
 console.log(mensagem.includes('segunda'))
 console.log(mensagem.startsWith('Minha'))
 console.log(mensagem.endsWith('primeira'))
+console.log(mensagem.replace('primeira','Segunda'))
+console.log(mensagem.split(' '));
